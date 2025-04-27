@@ -1,4 +1,4 @@
-const backendDomin = "https://backend-xi-roan.vercel.app/";
+const backendDomin = "https://backend-xi-roan.vercel.app";
 const SummaryApi = {
     signUP : {
         url : `${backendDomin}/api/signup`,
