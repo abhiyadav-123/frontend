@@ -1,4 +1,4 @@
-const backendDomin = process.env.REACT_APP_BACKEND_URL;
+const backendDomin = "https://backend-xi-roan.vercel.app/";
 const SummaryApi = {
     signUP : {
         url : `${backendDomin}/api/signup`,
