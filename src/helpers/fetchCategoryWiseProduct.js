@@ -1,12 +1,16 @@
+// fetchCategoryWiseProduct.js
+
+const { default: SummaryApi } = require("../common");
+
 const fetchCategoryWiseProduct = async (category) => {
     try {
+        console.log("Category being sent:", category); // Debugging
         const response = await fetch(SummaryApi.categoryWiseProduct.url, {
             method: SummaryApi.categoryWiseProduct.method,
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ category }),
-            credentials: "include"  // Important for cookies/session
         });
 
         if (!response.ok) {
